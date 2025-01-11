@@ -14,7 +14,7 @@ const Landing = () => {
     <div className={classes["landing-container"]}>
       <div className={classes["landing-header"]}>
         <Typography
-          fontSize={{ xs: 15, sm: 20, md: 10, lg: 15, xl: 50 }}
+          fontSize={{ xs: 15, sm: 20, md: 10, lg: 15, xl: 20 }}
           fontWeight="400"
           color="#291212"
         >
