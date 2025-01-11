@@ -24,14 +24,14 @@ const Landing = () => {
       <div className={classes["landing-navbar"]}>
         <div className={classes["landing-logo"]}>
           <Typography
-            fontSize={{ xs: 15, sm: 10, md: 15, lg: 20, xl: 50 }}
+            fontSize={{ xs: 15, sm: 10, md: 15, lg: 20, xl: 30 }}
             color="#291212"
             fontWeight="bold"
           >
             Guruprasad
           </Typography>
           <Typography
-            fontSize={{ xs: 14, sm: 10, md: 15, lg: 18, xl: 50 }}
+            fontSize={{ xs: 14, sm: 10, md: 15, lg: 18, xl: 28 }}
             color="#291212"
             fontWeight="bold"
           >
@@ -47,7 +47,7 @@ const Landing = () => {
                   ? `${classes["nav-link"]} ${classes["nav-link-active"]}`
                   : classes["nav-link"]
               }
-              fontSize={{ xs: 13, sm: 15, md: 16, lg: 18, xl: 40 }}
+              fontSize={{ xs: 13, sm: 15, md: 16, lg: 18, xl: 25 }}
               onClick={() => handleNavClick(link)}
             >
               {link}
