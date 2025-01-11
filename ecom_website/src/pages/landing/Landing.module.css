@@ -84,3 +84,12 @@
   align-items: center;
   text-shadow: rgb(145, 95, 95) 2px 2px 3px !important;
 }
+
+.landing-scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+  text-shadow: rgb(145, 95, 95) 2px 2px 3px !important;
+}

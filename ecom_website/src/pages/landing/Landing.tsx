@@ -70,6 +70,20 @@ const Landing = () => {
           Sustainable Style for Your Home
         </Typography>
       </div>
+      <div className={classes["landing-scroll-down"]}>
+        <Typography
+          variant="h2"
+          fontSize={{ xs: 15, sm: 20, md: 10, lg: 15, xl: 20 }}
+          fontWeight="bold"
+          color="info"
+          width="max-content"
+        >
+          Scroll Down to Explore!
+        </Typography>
+      </div>
+      <div className={classes["landing-footer"]}>
+
+      </div>
     </div>
   );
 };
