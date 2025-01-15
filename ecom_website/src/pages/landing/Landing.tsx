@@ -10,6 +10,41 @@ const Landing = () => {
     setActiveLink(link);
   };
 
+  const featuredProducts = [
+    {
+      name: "Villa",
+      price: 12000,
+    },
+    {
+      name: "Office Chair",
+      price: 7000,
+    },
+    {
+      name: "Bookshelf",
+      price: 15000,
+    },
+    {
+      name: "Sofa",
+      price: 20000,
+    },
+    {
+      name: "Armchair",
+      price: 10000,
+    },
+    {
+      name: "Table",
+      price: 18000,
+    },
+    {
+      name: "Shelf",
+      price: 10000,
+    },
+    {
+      name: "Chair",
+      price: 5000,
+    },
+  ];
+
   return (
     <div className={classes["landing-container"]}>
       <div className={classes["landing-header"]}>
@@ -81,9 +116,47 @@ const Landing = () => {
           Scroll Down to Explore!
         </Typography>
       </div>
-      <div className={classes["landing-footer"]}>
-
+      <div className={classes["landing-featured-products"]}>
+        <div className={classes["landing-featured-products-title"]}>
+          <Typography
+            variant="h2"
+            fontSize={{ xs: 15, sm: 20, md: 30, lg: 40, xl: 50 }}
+            fontWeight="bold"
+            color="textSecondary"
+            width="max-content"
+          >
+            Our Featured Products
+          </Typography>
+        </div>
+        <div className={classes["landing-featured-products-container"]}>
+          {featuredProducts.map((product, index) => (
+            <div
+              key={index}
+              className={classes["landing-featured-products-card"]}
+            >
+              <Typography
+                variant="h2"
+                fontSize={{ xs: 15, sm: 18, md: 22, lg: 28, xl: 38 }}
+                fontWeight="bold"
+                color="textSecondary"
+                width="max-content"
+              >
+                {product.name}
+              </Typography>
+              <Typography
+                variant="h2"
+                fontSize={{ xs: 15, sm: 18, md: 22, lg: 28, xl: 38 }}
+                fontWeight="bold"
+                color="textSecondary"
+                width="max-content"
+              >
+                ₹ {product.price} {/*&#8377*/}
+              </Typography>
+            </div>
+          ))}
+        </div>
       </div>
+      <div className={classes["landing-footer"]}></div>
     </div>
   );
 };

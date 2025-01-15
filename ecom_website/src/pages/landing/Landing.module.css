@@ -93,3 +93,31 @@
   margin-bottom: 5px;
   text-shadow: rgb(145, 95, 95) 2px 2px 3px !important;
 }
+
+.landing-featured-products-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+  text-shadow: rgb(68, 17, 17) 2px 2px 3px !important;
+}
+
+.landing-featured-products-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.landing-featured-products-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  text-shadow: rgb(145, 95, 95) 2px 2px 3px !important;
+}
